@@ -44,6 +44,7 @@ nav{
 
 .content1{
     width: 70%;
+    margin-bottom: 20px;
 }
 
 img{
@@ -59,14 +60,15 @@ h1{
 input[type=button]{
     padding: 10px 70px 10px 70px;
     background-color: white;
-    border: 2px solid #f56a6aaa;
+    border: 1px solid #f56a6a;
     border-radius: 4px;
-    color: #f56a6aaa;
+    color: #f56a6a;
+    font-weight: 400;
 }
 
 input[type=button]:hover{
-    border: 2px solid #6aa6f5;
-    color: #6aa6f5;
+    border: 2px solid #6196db;
+    color: #6196db;
 }
 
 hr{
@@ -93,6 +95,32 @@ hr{
     grid-template-columns: 18% 82%;
 }
 
+@media only screen and (max-width: 650px) {
+    body{
+        padding: 20px;
+    }
+    
+    .section2{
+        display: inline-block;
+    }
+
+    .section1{
+        display: block;
+        text-align: center;
+    }
+
+    .content1{
+        width: 100%;
+    }
+
+    nav{
+        display: inline-block;
+        padding-bottom: 20px;
+        margin: 0px auto;
+        width: 100%;
+    }
+}
+
 .section2 > div > i{
     color: #f56a6a;
     font-size: 3em;
@@ -109,5 +137,5 @@ h2{
 }
 
 .image{
-    margin: 45px;
+    margin: 40px 40px 10px 40px;
 }
