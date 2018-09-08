@@ -5,7 +5,7 @@ body{
 
 p{
     font-family: 'Open Sans', sans-serif;
-    color: grey;
+    color: #7f888f;
     text-align: justify;
     line-height: 25px;
 }
@@ -20,17 +20,12 @@ nav{
 .redes{
     margin-top: 20px;
     text-align: right;
-    flex-direction: row-reverse;
-    color: grey;
 }
 
-.redes > i{
-    padding-left: 5px;
-    padding-right: 5px;
-}
-
-.titulo p{
-    color: grey;
+.redes > a > i{
+    padding-left: 8px;
+    padding-right: 8px;
+    color: #7f888f;
 }
 
 .titulo{
@@ -44,9 +39,7 @@ nav{
 }
 
 .section1{
-    margin-top: 50px;
     display: flex;
-    margin-bottom: 50px;
 }
 
 .content1{
@@ -71,8 +64,14 @@ input[type=button]{
     color: #f56a6aaa;
 }
 
+input[type=button]:hover{
+    border: 2px solid #6aa6f5;
+    color: #6aa6f5;
+}
+
 hr{
-    background-color: gray;
+    opacity: 0.8;
+    border: 1px solid #d2d6dd;
 }
 
 .section2{
@@ -81,3 +80,34 @@ hr{
     grid-column-gap: 2em;
 }
 
+.section2 span{
+    display: block;
+    font-weight: bold;
+    color:black;
+    line-height: 3.5em;
+    font-size: 1.1em;
+}
+
+.section2 > div{
+    display: grid;
+    grid-template-columns: 18% 82%;
+}
+
+.section2 > div > i{
+    color: #f56a6a;
+    font-size: 3em;
+    padding-top: 60%;
+}
+
+h2{
+    display: inline-block;
+    border-bottom: 5px solid #f56a6a;
+    padding-bottom: 20px;
+    padding-right: 100px;
+    font-size: 1.5em;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.image{
+    margin: 45px;
+}
